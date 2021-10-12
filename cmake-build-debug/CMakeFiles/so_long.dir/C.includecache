@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ez_mode/Developer/GitHub/so_long/get_next_line.c
+so_long.h
+/Users/ez_mode/Developer/GitHub/so_long/so_long.h
+
+/Users/ez_mode/Developer/GitHub/so_long/get_next_line_utils.c
+so_long.h
+/Users/ez_mode/Developer/GitHub/so_long/so_long.h
+
+/Users/ez_mode/Developer/GitHub/so_long/so_long.c
+so_long.h
+/Users/ez_mode/Developer/GitHub/so_long/so_long.h
+
+/Users/ez_mode/Developer/GitHub/so_long/so_long.h
+stdio.h
+-
+unistd.h
+-
+fcntl.h
+-
+stdlib.h
+-
+
