@@ -66,31 +66,31 @@ include CMakeFiles/so_long.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/so_long.dir/flags.make
 
-CMakeFiles/so_long.dir/get_next_line.c.o: CMakeFiles/so_long.dir/flags.make
-CMakeFiles/so_long.dir/get_next_line.c.o: ../get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ez_mode/Developer/GitHub/so_long/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/so_long.dir/get_next_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/so_long.dir/get_next_line.c.o -c /Users/ez_mode/Developer/GitHub/so_long/get_next_line.c
+CMakeFiles/so_long.dir/get_next_line/get_next_line.c.o: CMakeFiles/so_long.dir/flags.make
+CMakeFiles/so_long.dir/get_next_line/get_next_line.c.o: ../get_next_line/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ez_mode/Developer/GitHub/so_long/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/so_long.dir/get_next_line/get_next_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/so_long.dir/get_next_line/get_next_line.c.o -c /Users/ez_mode/Developer/GitHub/so_long/get_next_line/get_next_line.c
 
-CMakeFiles/so_long.dir/get_next_line.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/so_long.dir/get_next_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ez_mode/Developer/GitHub/so_long/get_next_line.c > CMakeFiles/so_long.dir/get_next_line.c.i
+CMakeFiles/so_long.dir/get_next_line/get_next_line.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/so_long.dir/get_next_line/get_next_line.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ez_mode/Developer/GitHub/so_long/get_next_line/get_next_line.c > CMakeFiles/so_long.dir/get_next_line/get_next_line.c.i
 
-CMakeFiles/so_long.dir/get_next_line.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/so_long.dir/get_next_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ez_mode/Developer/GitHub/so_long/get_next_line.c -o CMakeFiles/so_long.dir/get_next_line.c.s
+CMakeFiles/so_long.dir/get_next_line/get_next_line.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/so_long.dir/get_next_line/get_next_line.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ez_mode/Developer/GitHub/so_long/get_next_line/get_next_line.c -o CMakeFiles/so_long.dir/get_next_line/get_next_line.c.s
 
-CMakeFiles/so_long.dir/get_next_line_utils.c.o: CMakeFiles/so_long.dir/flags.make
-CMakeFiles/so_long.dir/get_next_line_utils.c.o: ../get_next_line_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ez_mode/Developer/GitHub/so_long/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/so_long.dir/get_next_line_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/so_long.dir/get_next_line_utils.c.o -c /Users/ez_mode/Developer/GitHub/so_long/get_next_line_utils.c
+CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.o: CMakeFiles/so_long.dir/flags.make
+CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.o: ../get_next_line/get_next_line_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ez_mode/Developer/GitHub/so_long/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.o -c /Users/ez_mode/Developer/GitHub/so_long/get_next_line/get_next_line_utils.c
 
-CMakeFiles/so_long.dir/get_next_line_utils.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/so_long.dir/get_next_line_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ez_mode/Developer/GitHub/so_long/get_next_line_utils.c > CMakeFiles/so_long.dir/get_next_line_utils.c.i
+CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ez_mode/Developer/GitHub/so_long/get_next_line/get_next_line_utils.c > CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.i
 
-CMakeFiles/so_long.dir/get_next_line_utils.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/so_long.dir/get_next_line_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ez_mode/Developer/GitHub/so_long/get_next_line_utils.c -o CMakeFiles/so_long.dir/get_next_line_utils.c.s
+CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ez_mode/Developer/GitHub/so_long/get_next_line/get_next_line_utils.c -o CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.s
 
 CMakeFiles/so_long.dir/so_long.c.o: CMakeFiles/so_long.dir/flags.make
 CMakeFiles/so_long.dir/so_long.c.o: ../so_long.c
@@ -107,15 +107,15 @@ CMakeFiles/so_long.dir/so_long.c.s: cmake_force
 
 # Object files for target so_long
 so_long_OBJECTS = \
-"CMakeFiles/so_long.dir/get_next_line.c.o" \
-"CMakeFiles/so_long.dir/get_next_line_utils.c.o" \
+"CMakeFiles/so_long.dir/get_next_line/get_next_line.c.o" \
+"CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.o" \
 "CMakeFiles/so_long.dir/so_long.c.o"
 
 # External object files for target so_long
 so_long_EXTERNAL_OBJECTS =
 
-so_long: CMakeFiles/so_long.dir/get_next_line.c.o
-so_long: CMakeFiles/so_long.dir/get_next_line_utils.c.o
+so_long: CMakeFiles/so_long.dir/get_next_line/get_next_line.c.o
+so_long: CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.o
 so_long: CMakeFiles/so_long.dir/so_long.c.o
 so_long: CMakeFiles/so_long.dir/build.make
 so_long: CMakeFiles/so_long.dir/link.txt

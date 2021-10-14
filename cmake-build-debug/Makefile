@@ -129,53 +129,53 @@ so_long/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/build
 .PHONY : so_long/fast
 
-get_next_line.o: get_next_line.c.o
-.PHONY : get_next_line.o
+get_next_line/get_next_line.o: get_next_line/get_next_line.c.o
+.PHONY : get_next_line/get_next_line.o
 
 # target to build an object file
-get_next_line.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.o
-.PHONY : get_next_line.c.o
+get_next_line/get_next_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line/get_next_line.c.o
+.PHONY : get_next_line/get_next_line.c.o
 
-get_next_line.i: get_next_line.c.i
-.PHONY : get_next_line.i
+get_next_line/get_next_line.i: get_next_line/get_next_line.c.i
+.PHONY : get_next_line/get_next_line.i
 
 # target to preprocess a source file
-get_next_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.i
-.PHONY : get_next_line.c.i
+get_next_line/get_next_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line/get_next_line.c.i
+.PHONY : get_next_line/get_next_line.c.i
 
-get_next_line.s: get_next_line.c.s
-.PHONY : get_next_line.s
+get_next_line/get_next_line.s: get_next_line/get_next_line.c.s
+.PHONY : get_next_line/get_next_line.s
 
 # target to generate assembly for a file
-get_next_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.s
-.PHONY : get_next_line.c.s
+get_next_line/get_next_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line/get_next_line.c.s
+.PHONY : get_next_line/get_next_line.c.s
 
-get_next_line_utils.o: get_next_line_utils.c.o
-.PHONY : get_next_line_utils.o
+get_next_line/get_next_line_utils.o: get_next_line/get_next_line_utils.c.o
+.PHONY : get_next_line/get_next_line_utils.o
 
 # target to build an object file
-get_next_line_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line_utils.c.o
-.PHONY : get_next_line_utils.c.o
+get_next_line/get_next_line_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.o
+.PHONY : get_next_line/get_next_line_utils.c.o
 
-get_next_line_utils.i: get_next_line_utils.c.i
-.PHONY : get_next_line_utils.i
+get_next_line/get_next_line_utils.i: get_next_line/get_next_line_utils.c.i
+.PHONY : get_next_line/get_next_line_utils.i
 
 # target to preprocess a source file
-get_next_line_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line_utils.c.i
-.PHONY : get_next_line_utils.c.i
+get_next_line/get_next_line_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.i
+.PHONY : get_next_line/get_next_line_utils.c.i
 
-get_next_line_utils.s: get_next_line_utils.c.s
-.PHONY : get_next_line_utils.s
+get_next_line/get_next_line_utils.s: get_next_line/get_next_line_utils.c.s
+.PHONY : get_next_line/get_next_line_utils.s
 
 # target to generate assembly for a file
-get_next_line_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line_utils.c.s
-.PHONY : get_next_line_utils.c.s
+get_next_line/get_next_line_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.s
+.PHONY : get_next_line/get_next_line_utils.c.s
 
 so_long.o: so_long.c.o
 .PHONY : so_long.o
@@ -210,12 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... so_long"
-	@echo "... get_next_line.o"
-	@echo "... get_next_line.i"
-	@echo "... get_next_line.s"
-	@echo "... get_next_line_utils.o"
-	@echo "... get_next_line_utils.i"
-	@echo "... get_next_line_utils.s"
+	@echo "... get_next_line/get_next_line.o"
+	@echo "... get_next_line/get_next_line.i"
+	@echo "... get_next_line/get_next_line.s"
+	@echo "... get_next_line/get_next_line_utils.o"
+	@echo "... get_next_line/get_next_line_utils.i"
+	@echo "... get_next_line/get_next_line_utils.s"
 	@echo "... so_long.o"
 	@echo "... so_long.i"
 	@echo "... so_long.s"

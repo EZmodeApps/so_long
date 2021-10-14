@@ -4,7 +4,7 @@
 # compile C with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/ez_mode/Developer/GitHub/so_long/. -I/Users/ez_mode/Developer/GitHub/so_long/get_next_line
+C_INCLUDES = -I/Users/ez_mode/Developer/GitHub/so_long/. -I/Users/ez_mode/Developer/GitHub/so_long/get_next_line -I/Users/ez_mode/Developer/GitHub/so_long/libft
 
 C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -std=gnu11
 

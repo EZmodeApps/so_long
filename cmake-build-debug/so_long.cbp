@@ -46,6 +46,7 @@
 				<Compiler>
 					<Add directory="/Users/ez_mode/Developer/GitHub/so_long/."/>
 					<Add directory="/Users/ez_mode/Developer/GitHub/so_long/get_next_line"/>
+					<Add directory="/Users/ez_mode/Developer/GitHub/so_long/libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -68,6 +69,7 @@
 				<Compiler>
 					<Add directory="/Users/ez_mode/Developer/GitHub/so_long/."/>
 					<Add directory="/Users/ez_mode/Developer/GitHub/so_long/get_next_line"/>
+					<Add directory="/Users/ez_mode/Developer/GitHub/so_long/libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -82,10 +84,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ez_mode/Developer/GitHub/so_long/get_next_line.c">
+		<Unit filename="/Users/ez_mode/Developer/GitHub/so_long/get_next_line/get_next_line.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/ez_mode/Developer/GitHub/so_long/get_next_line_utils.c">
+		<Unit filename="/Users/ez_mode/Developer/GitHub/so_long/get_next_line/get_next_line_utils.c">
 			<Option target="so_long"/>
 		</Unit>
 		<Unit filename="/Users/ez_mode/Developer/GitHub/so_long/so_long.c">

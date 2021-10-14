@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/ez_mode/Developer/GitHub/so_long/get_next_line.c" "/Users/ez_mode/Developer/GitHub/so_long/cmake-build-debug/CMakeFiles/so_long.dir/get_next_line.c.o"
-  "/Users/ez_mode/Developer/GitHub/so_long/get_next_line_utils.c" "/Users/ez_mode/Developer/GitHub/so_long/cmake-build-debug/CMakeFiles/so_long.dir/get_next_line_utils.c.o"
+  "/Users/ez_mode/Developer/GitHub/so_long/get_next_line/get_next_line.c" "/Users/ez_mode/Developer/GitHub/so_long/cmake-build-debug/CMakeFiles/so_long.dir/get_next_line/get_next_line.c.o"
+  "/Users/ez_mode/Developer/GitHub/so_long/get_next_line/get_next_line_utils.c" "/Users/ez_mode/Developer/GitHub/so_long/cmake-build-debug/CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.o"
   "/Users/ez_mode/Developer/GitHub/so_long/so_long.c" "/Users/ez_mode/Developer/GitHub/so_long/cmake-build-debug/CMakeFiles/so_long.dir/so_long.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
@@ -18,6 +18,7 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../."
   "../get_next_line"
+  "../libft"
   )
 
 # The set of dependency files which are needed:

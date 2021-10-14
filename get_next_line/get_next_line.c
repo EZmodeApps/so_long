@@ -1,4 +1,4 @@
-#include "so_long.h"
+#include "../so_long.h"
 
 char	*get_line(char *saved_buf)
 {
@@ -38,7 +38,7 @@ char	*clear_saved_buf(char *saved_buf)
 		free(saved_buf);
 		return (NULL);
 	}
-	length = ft_strlen(saved_buf) - i;
+	length = strlen_gnl(saved_buf) - i;
 	new_buf = malloc(sizeof(char) * (length + 1));
 	if (!new_buf)
 		return (NULL);
@@ -67,7 +67,7 @@ int	get_next_line(int fd, char **line)
 	{
 		bytes = read(fd, buf, BUFFER_SIZE);
 		buf[bytes] = '\0';
-		saved_buf = ft_strjoin(saved_buf, buf);
+		saved_buf = strjoin_gnl(saved_buf, buf);
 		if (ft_strchr(saved_buf, '\n'))
 			break ;
 	}

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/so_long.dir/get_next_line.c.o"
-  "CMakeFiles/so_long.dir/get_next_line_utils.c.o"
+  "CMakeFiles/so_long.dir/get_next_line/get_next_line.c.o"
+  "CMakeFiles/so_long.dir/get_next_line/get_next_line_utils.c.o"
   "CMakeFiles/so_long.dir/so_long.c.o"
   "so_long"
   "so_long.pdb"
