@@ -1,4 +1,0 @@
-"/Users/ez_mode/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/ez_mode/Developer/GitHub/so_long
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/ez_mode/Developer/GitHub/so_long/cmake-build-debug

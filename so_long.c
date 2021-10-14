@@ -2,7 +2,8 @@
 // Created by EZmodeApps on 10.10.2021.
 //
 
-#include "./so_long.h"
+#include "so_long.h"
+
 
 t_main *mapStructInit(void)
 {
@@ -12,7 +13,7 @@ t_main *mapStructInit(void)
 	mapData->map = NULL;
 	mapData->player = NULL;
 	mapData->size_x = 0;
-	mapData->size_y = 0;
+	mapData->size_y = -1;
 	return(mapData);
 }
 
@@ -64,8 +65,12 @@ void drawMap(t_main *mapData)
 int main(int argc, char **argv)
 {
 	t_main *mapData;
+	void *mlx;
+	char *mapp;
+	//void *mlx_win;
 	int fd;
 	int n;
+	int row_counter;
 
 	if (argc != 2)
 	{
@@ -73,15 +78,27 @@ int main(int argc, char **argv)
 		exit(1);
 	}
 	n = 1;
+	row_counter = 0;
+	mlx = mlx_init();
 	mapData = mapStructInit();
 	fd = open(argv[1], O_RDONLY);
 	while (n > 0)
 	{
+//		mapData->size_y++;
 		n = get_next_line(fd, &mapData->map);
-		drawMap(mapData);
+//		drawMap(mapData);
+//		mapData->size_x = ft_strlen(mapData->map);
+		mapp = strjoin_gnl(mapp, mapData->map);
+		mapp = strjoin_gnl(mapp, "\n");
+//		printf("%d\n", mapData->size_x);
 //		printf("%s\n", mapData->map);
-		free(mapData->map);
+//		free(mapData->map);
 	}
+	printf("%d\n", mapData->size_x);
+	printf("%d\n", mapData->size_y);
+	printf("%s\n", mapp);
+//	mlx_win = mlx_new_window(mlx, 1920, 1080, "Hello world!");
+//	mlx_loop(mlx);
 	close(fd);
 	structFree(mapData);
 	return (0);
