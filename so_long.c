@@ -67,6 +67,7 @@ int main(int argc, char **argv)
 	t_main *mapData;
 	void *mlx;
 	char *mapp;
+	char *temp;
 	//void *mlx_win;
 	int fd;
 	int n;
@@ -89,7 +90,9 @@ int main(int argc, char **argv)
 //		drawMap(mapData);
 //		mapData->size_x = ft_strlen(mapData->map);
 		mapp = strjoin_gnl(mapp, mapData->map);
+		temp = mapp;
 		mapp = strjoin_gnl(mapp, "\n");
+		free(temp);
 //		printf("%d\n", mapData->size_x);
 //		printf("%s\n", mapData->map);
 		free(mapData->map);
@@ -97,7 +100,7 @@ int main(int argc, char **argv)
 	printf("%d\n", mapData->size_x);
 	printf("%d\n", mapData->size_y);
 	printf("%s\n", mapp);
-//	mlx_win = mlx_new_window(mlx, 1920, 1080, "Hello world!");
+	//mlx_win = mlx_new_window(mlx, 1920, 1080, "Hello world!");
 //	mlx_loop(mlx);
 	close(fd);
 	free(mapp);
