@@ -12,7 +12,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#include <mlx.h>
+#include "./mlx/mlx.h"
 
 typedef struct s_player
 {

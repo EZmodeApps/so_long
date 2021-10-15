@@ -92,7 +92,7 @@ int main(int argc, char **argv)
 		mapp = strjoin_gnl(mapp, "\n");
 //		printf("%d\n", mapData->size_x);
 //		printf("%s\n", mapData->map);
-//		free(mapData->map);
+		free(mapData->map);
 	}
 	printf("%d\n", mapData->size_x);
 	printf("%d\n", mapData->size_y);
@@ -100,6 +100,7 @@ int main(int argc, char **argv)
 //	mlx_win = mlx_new_window(mlx, 1920, 1080, "Hello world!");
 //	mlx_loop(mlx);
 	close(fd);
+	free(mapp);
 	structFree(mapData);
 	return (0);
 }
