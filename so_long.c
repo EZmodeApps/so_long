@@ -1,6 +1,14 @@
-//
-// Created by EZmodeApps on 10.10.2021.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   so_long.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: caniseed <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/19 22:01:20 by caniseed          #+#    #+#             */
+/*   Updated: 2021/10/19 22:01:48 by caniseed         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "so_long.h"
 
@@ -12,54 +20,76 @@ t_main *mapStructInit(void)
 	mapData = malloc(sizeof(t_main));
 	mapData->map = NULL;
 	mapData->player = NULL;
-	mapData->size_x = 0;
-	mapData->size_y = -1;
+	mapData->width = 0;
+	mapData->height = 0;
 	return(mapData);
 }
 
 void structFree(t_main *mapData)
 {
 	mapData->map = NULL;
+	mapData->mlx = NULL;
+	mapData->mlx_win = NULL;
+	mapData->width = 0;
+	mapData->height = 0;
 	mapData->player = NULL;
-	mapData->size_x = 0;
-	mapData->size_y = 0;
 	free(mapData);
 }
 
-void drawMap(t_main *mapData)
+void drawMap(t_main *mapData, void *mlx, void *mlx_win)
 {
-	int i = 0;
-	char *line = mapData->map;
+	int i;
+	int x = 0;
+	int y = 0;
+	int j;
+	void *picWall;
+	void *picFloor;
+	char *picPath = "/Users/caniseed/Desktop/so_long/so_long/textures/wall.xpm";
+	char *picPath2 = "/Users/caniseed/Desktop/so_long/so_long/textures/floor.xpm";
+	int pic_width;
+	int pic_height;
 
-	while (line[i])
+	i = 0;
+	j = 0;
+	picWall = mlx_xpm_file_to_image(mlx, picPath, &pic_width, &pic_height);
+	picFloor = mlx_xpm_file_to_image(mlx, picPath2, &pic_width, &pic_height);
+	while (mapData->map[j])
+//	while (j < mapData->height)
 	{
-		if (line[i] == '1')
+		i = 0;
+		x = 0;
+		while (mapData->map[j][i])
 		{
-			printf("%c", line[i]);
-		}
-		if (line[i] == '0')
-		{
-			printf("%c", line[i]);
-		}
-		if (line[i] == '\n')
-		{
-			printf("\n");
-		}
-		if (line[i] == 'E')
-		{
-			printf("%c", line[i]);
-		}
-		if (line[i] == 'C')
-		{
-			printf("%c", line[i]);
-		}
-		if (line[i] == 'P')
-		{
-			printf("%c", line[i]);
-		}
-		i++;
+//			printf("1\n");
+			if (mapData->map[j][i] == '1')
+			{
+				mlx_put_image_to_window(mlx, mlx_win, picWall, x, y);
+				x += 32;
+			}
+			else
+			{
+				mlx_put_image_to_window(mlx, mlx_win, picFloor, x, y);
+				x += 32;
+			}
+//			if (mapData->map[i] == '0') {
+//				printf("%c", mapData->map[i]);
+//			}
+//			if (mapData->map[i] == '\n') {
+//				printf("\n");
+//			}
+//			if (mapData->map[i] == 'E') {
+//				printf("%c", mapData->map[i]);
+//			}
+//			if (mapData->map[i] == 'C') {
+//				printf("%c", mapData->map[i]);
+//			}
+//			if (mapData->map[i] == 'P') {
+//				printf("%c", mapData->map[i]);
+				i++;
+			}
+		j++;
+		y += 32;
 	}
-	printf("\n");
 }
 
 int getMapHeight(char *mapInput)
@@ -70,7 +100,6 @@ int getMapHeight(char *mapInput)
 	char *line;
 
 	n = 1;
-	line = NULL;
 	counter = 0;
 	fd = open(mapInput, O_RDONLY);
 	while (n > 0)
@@ -84,13 +113,10 @@ int getMapHeight(char *mapInput)
 
 int getMapWidth(char *mapInput)
 {
-//	int n;
 	int length;
 	int fd;
 	char *line;
 
-//	n = 1;
-	line = NULL;
 	length = 0;
 	fd = open(mapInput, O_RDONLY);
 	get_next_line(fd, &line);
@@ -99,20 +125,51 @@ int getMapWidth(char *mapInput)
 	return (length);
 }
 
+void locatePlayer(t_main *mapData)
+{
+	int i;
+	int j;
+
+	i = 0;
+	j = 0;
+	while(mapData->map[i])
+	{
+		while (mapData->map[i][j])
+		{
+			if (mapData->map[i][j] == 'P')
+			{
+				mapData->player->x = j;
+				mapData->player->y = i;
+			}
+			j++;
+		}
+		i++;
+		j = 0;
+	}
+}
+
+int	key_hook(int keycode)//, t_main *mapData)
+{
+	//(t_main *)mapData;
+	if (keycode == ESC)
+		exit(2);
+	printf("%d\n", keycode);
+	return (9);
+}
+
 int main(int argc, char **argv)
 {
 	t_main *mapData;
-//	void *mlx;
-	char *mapp;
-//	char *temp;
-	char **map_main;
-	//void *mlx_win;
+	//char *pic_path = "/Users/caniseed/Desktop/so_long/so_long/3333333.xpm";
+	//void *pic;
+	void *mlx;
+	void *mlx_win;
 	int fd;
 	int n;
-	int row_counter;
-	int height;
-	int width;
-	int i = 0;
+	int i;
+	int j;
+	//int pic_width;
+//	int pic_height;
 
 	if (argc != 2)
 	{
@@ -121,42 +178,58 @@ int main(int argc, char **argv)
 	}
 //	checkMapValidity();
 	n = 1;
-	row_counter = 0;
-//	mlx = mlx_init();
+	i = 0;
+	j = 0;
+	mlx = mlx_init();
 	mapData = mapStructInit();
-	height = getMapHeight(argv[1]);
-	width = getMapWidth(argv[1]);
-	printf("%d\n", height);
-	printf("%d\n", width);
+	mapData->height = getMapHeight(argv[1]);
+	mapData->width = getMapWidth(argv[1]);
+	printf("%d\n", mapData->width);
+	printf("%d\n", mapData->height);
 	fd = open(argv[1], O_RDONLY);
-	map_main = (char **)malloc(sizeof(char *) * height);
-	while (n > 0)
+	if (fd < 0)
 	{
-//		mapData->size_y++;
-		n = get_next_line(fd, &mapData->map);
-//		drawMap(mapData);
-//		mapp = strjoin_gnl(mapp, mapData->map);
-		while (mapData->map[i])
-		{
-			
-		}
-//		temp = mapp;
-		//mapp = strjoin_gnl(mapp, "\0");
-		//*map_main = mapp;
-		//free(temp);
-//		printf("%s\n", mapData->map);
-		free(mapData->map);
+		ft_putstr("Error: bad file\n");
+		exit(1);
 	}
-	//printf("%d\n", mapData->size_x);
-	//printf("%d\n", mapData->size_y);
-	printf("%s\n", mapp);
-	printf("end end end");
-	//mlx_win = mlx_new_window(mlx, 1920, 1080, "Hello world!");
-//	mlx_loop(mlx);
+	mapData->map = (char **)malloc(sizeof(char *) * (mapData->height + 1));//возможно ошибка с выделением памяти ?
+	if (!mapData->map)
+	{
+		free (mapData->map);
+		exit (1);
+	}
+	ft_bzero(mapData->map, (sizeof(char *) * (mapData->height + 1)));
+	while (n > 0) //getMap
+	{
+		n = get_next_line(fd, &mapData->map[i]);
+		i++;
+	}
 	close(fd);
-	//free(mlx);
-	free(mapp);
-	free(map_main);
+//	locatePlayer(mapData);
+//	printf("%d\n", mapData->player->x);
+//	printf("%d\n", mapData->player->y);
+	mlx_win = mlx_new_window(mlx, 1920, 1080, "so_long");
+	drawMap(mapData, mlx, mlx_win);
+//	pic = mlx_xpm_file_to_image(mlx, pic_path, &pic_width, &pic_height);
+//	mlx_put_image_to_window(mlx, mlx_win, pic, 0, 0);
+//	mlx_xpm_file_to_image(mlx, pic, 0, 0);
+	//mlx_put_image_to_window(mlx, mlx_win, pic, 0, 0);
+	mlx_string_put(mlx, mlx_win, 30, 30, 99999, "hello");
+	//mlx_key_hook(mlx_win, key_hook, mapData);
+	printf("%s\n", mapData->map[0]);
+	printf("%s\n", mapData->map[1]);
+	printf("%s\n", mapData->map[2]);
+	printf("%s\n", mapData->map[3]);
+	printf("%s\n", mapData->map[4]);
+	printf("%s\n", mapData->map[5]);
+	mlx_loop(mlx);
+	free(mlx);
+	while (j < i) //freeMap, возможна утечка
+	{
+		free(mapData->map[j]);
+		j++;
+	}
+	free(mapData->map);
 	structFree(mapData);
-	return (0);
+	return (SUCCESS);
 }

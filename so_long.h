@@ -1,11 +1,21 @@
-//
-// Created by EZmodeApps on 10.10.2021.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   so_long.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: caniseed <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/19 22:01:59 by caniseed          #+#    #+#             */
+/*   Updated: 2021/10/19 22:02:03 by caniseed         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef SO_LONG_SO_LONG_H
 #define SO_LONG_SO_LONG_H
 
 #define BUFFER_SIZE 1
+#define SUCCESS 0
+#define ESC 53
 
 #include "./libft/libft.h"
 #include <stdio.h>
@@ -13,6 +23,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include "./mlx/mlx.h"
+//#include <mlx.h>
 
 typedef struct s_player
 {
@@ -22,10 +33,12 @@ typedef struct s_player
 
 typedef struct	s_main
 {
+	char **map;
+	void *mlx;
+	void *mlx_win;
+	int width;
+	int height;
 	t_player *player;
-	char *map;
-	int size_x;
-	int size_y;
 }				t_main;
 
 size_t	strlen_gnl(char *s);
