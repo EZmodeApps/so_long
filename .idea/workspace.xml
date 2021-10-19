@@ -19,6 +19,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cb9ce689-f374-43cd-be8a-cb61f21829cf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_next_line/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line/get_next_line.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map_2.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map_2.ber" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/so_long.c" beforeDir="false" afterPath="$PROJECT_DIR$/so_long.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,11 +113,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Makefile Application.all" />
       <item itemvalue="Makefile Application.fclean" />
@@ -134,10 +132,23 @@
       <workItem from="1634230889566" duration="2719000" />
       <workItem from="1634303697706" duration="1498000" />
       <workItem from="1634315299779" duration="1845000" />
+      <workItem from="1634389326935" duration="6239000" />
+      <workItem from="1634482515131" duration="4240000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/get_next_line/get_next_line.c</url>
+          <line>56</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

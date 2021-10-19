@@ -69,7 +69,7 @@ int	get_next_line(int fd, char **line)
 		buf[bytes] = '\0';
 		saved_buf = strjoin_gnl(saved_buf, buf);
 		if (ft_strchr(saved_buf, '\n'))
-			break ;
+			break;
 	}
 	free(buf);
 	*line = get_line(saved_buf);
