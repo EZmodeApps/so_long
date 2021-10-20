@@ -164,12 +164,11 @@ void	key_hook(int keycode, t_main *mapData)
 	int pic_width;
 	int pic_height;
 	void *picPlayer = mlx_xpm_file_to_image(mapData->mlx, PLAYER_1, &pic_width, &pic_height);
-	//(t_main *)mapData;
 	if (keycode == W)
 		printf("W is pressed\n");
 	if (keycode == D) {
 		mapData->player->x += 32;
-		mlx_put_image_to_window(mapData->mlx, mapData->mlx_win, picPlayer, mapData->player->x, mapData->player->y);
+		mlx_put_image_to_window(mapData->mlx, mapData->mlx_win, picPlayer, mapData->player->x, mapData->player->y * 32);
 		printf("%d\n", mapData->player->y);
 	}
 	printf("%d\n", keycode);
