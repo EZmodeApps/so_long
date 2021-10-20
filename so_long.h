@@ -15,7 +15,16 @@
 
 #define BUFFER_SIZE 1
 #define SUCCESS 0
+#define PLAYER_1 "./textures/player_new.xpm"
+#define WALL "./textures/new_wall.xpm"
+#define FLOOR "./textures/new_floor.xpm"
+#define EXIT "./textures/exit.xpm"
+#define COLLECTIBLE "./textures/coin.xpm"
 #define ESC 53
+#define W 13
+#define A 0
+#define S 1
+#define D 2
 
 #include "./libft/libft.h"
 #include <stdio.h>
@@ -24,6 +33,11 @@
 #include <stdlib.h>
 #include "./mlx/mlx.h"
 //#include <mlx.h>
+
+typedef struct	s_vars {
+	void	*mlx;
+	void	*win;
+}				t_vars;
 
 typedef struct s_player
 {
@@ -38,6 +52,8 @@ typedef struct	s_main
 	void *mlx_win;
 	int width;
 	int height;
+	char *wall_path;
+	char *floor_path;
 	t_player *player;
 }				t_main;
 

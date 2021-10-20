@@ -19,6 +19,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cb9ce689-f374-43cd-be8a-cb61f21829cf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/111.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/222.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3333333.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/so_long.c" beforeDir="false" afterPath="$PROJECT_DIR$/so_long.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/so_long.h" afterDir="false" />
     </list>
@@ -86,6 +90,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager" selected="Makefile Application.all">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="so_long" TARGET_NAME="all" CONFIG_NAME="all" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
@@ -139,7 +148,9 @@
       <workItem from="1634661674963" duration="2535000" />
       <workItem from="1634664247556" duration="598000" />
       <workItem from="1634664883786" duration="4412000" />
-      <workItem from="1634670185447" duration="1000" />
+      <workItem from="1634670185447" duration="262000" />
+      <workItem from="1634728425946" duration="9218000" />
+      <workItem from="1634749219302" duration="4895000" />
     </task>
     <servers />
   </component>

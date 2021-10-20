@@ -19,7 +19,8 @@ all:	$(NAME)
 $(NAME):	$(OBJS) $(HEADER)
 	make -C libft
 	make -C mlx
-	gcc $(FLAGS) $(MLX_FLAGS) -Imlx $(SRCS) $(LIBFT) -I. -o $(NAME)
+	gcc $(MLX_FLAGS) -Imlx $(SRCS) $(LIBFT) -I. -o $(NAME)
+	#gcc $(FLAGS) $(MLX_FLAGS) -Imlx $(SRCS) $(LIBFT) -I. -o $(NAME)
 
 clean:
 	make clean -C libft
