@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: caniseed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 22:01:59 by caniseed          #+#    #+#             */
-/*   Updated: 2021/10/19 22:02:03 by caniseed         ###   ########.fr       */
+/*   Created: 2021/10/21 20:32:46 by caniseed          #+#    #+#             */
+/*   Updated: 2021/10/21 20:32:46 by caniseed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_SO_LONG_H
 #define SO_LONG_SO_LONG_H
 
-#define BUFFER_SIZE 1
-#define SUCCESS 0
+# define BUFFER_SIZE 1
+# define SUCCESS 0
 #define PLAYER_1 "./textures/player_new.xpm"
 #define WALL "./textures/new_wall.xpm"
 #define FLOOR "./textures/new_floor.xpm"
@@ -52,8 +52,7 @@ typedef struct	s_main
 	void *mlx_win;
 	int width;
 	int height;
-	char *wall_path;
-	char *floor_path;
+	int moves;
 	t_player *player;
 }				t_main;
 
