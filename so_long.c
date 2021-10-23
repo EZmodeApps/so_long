@@ -49,6 +49,7 @@ void	structFree(t_main *mapData)
 {
 	freeMap(mapData);
 	free(mapData->mlx);
+	mapData->mlx_win = NULL;
 	mapData->size_x = 0;
 	mapData->size_y = 0;
 	mapData->collectibles = 0;
