@@ -231,7 +231,7 @@ void	countExit(t_main *mapData)
 	}
 }
 
-void	key_hook(int keycode, t_main *mapData)
+int	key_hook(int keycode, t_main *mapData)
 {
 	if (keycode == ESC)
 	{
@@ -310,12 +310,14 @@ void	key_hook(int keycode, t_main *mapData)
 		}
 	printf("Your score is: %d.\n", mapData->moves);
 	//printf("%d\n", keycode);
+	return (0);
 }
 
 int	render_next_frame(t_main *mapData)
 {
 	drawMap(mapData);
 	putPlayer(mapData);
+	return (0);
 }
 
 int	checkExtension(char *filename)
@@ -365,7 +367,7 @@ int checkMapSize(t_main *mapData)
 	len = (int)ft_strlen(mapData->map[0]);
 	while (mapData->map[i])
 	{
-		if (ft_strlen(mapData->map[i]) != len)
+		if ((int)ft_strlen(mapData->map[i]) != len)
 			return (0);
 		i++;
 	}
