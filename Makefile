@@ -2,7 +2,14 @@ NAME = so_long
 
 SRCS = ./get_next_line/get_next_line_utils.c \
 		./get_next_line/get_next_line.c \
-		so_long.c
+		so_long.c \
+		buttons.c \
+		check_map.c \
+		draw.c \
+		draw_map_and_player.c \
+		errors.c \
+		get_map.c \
+		struct_and_free.c
 
 OBJS = ${SRCS:.c=.o}
 

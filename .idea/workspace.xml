@@ -18,8 +18,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb9ce689-f374-43cd-be8a-cb61f21829cf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/so_long.c" beforeDir="false" afterPath="$PROJECT_DIR$/so_long.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/so_long.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/coin.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/floor.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/textures/floor.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/new_floor.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/new_wall.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/player.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/textures/player.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/player_new.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/wall.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/textures/wall.xpm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +66,6 @@
             </list>
           </value>
         </entry>
-      </map>
-    </option>
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
       </map>
     </option>
   </component>
@@ -107,9 +112,9 @@
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -154,6 +159,13 @@
       <workItem from="1635024837603" duration="9000" />
       <workItem from="1635024891112" duration="3000" />
       <workItem from="1635029474675" duration="87000" />
+      <workItem from="1635078764883" duration="49000" />
+      <workItem from="1635080025729" duration="373000" />
+      <workItem from="1635082268964" duration="12363000" />
+      <workItem from="1635096928852" duration="982000" />
+      <workItem from="1635113956546" duration="1280000" />
+      <workItem from="1635116720425" duration="143000" />
+      <workItem from="1635116949863" duration="50000" />
     </task>
     <servers />
   </component>
