@@ -57,7 +57,7 @@ int	key_hook(int keycode, t_main *mapData)
 	return (0);
 }
 
-int ft_exit(t_main *mapData)
+int	ft_exit(t_main *mapData)
 {
     structFree(mapData);
     exit (SUCCESS);
