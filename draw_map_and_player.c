@@ -22,7 +22,7 @@ void	drawMap(t_main *mapData)
 	i = 0;
 	j = 0;
 	x = 0;
-	y = 0;
+	y = 32;
 	while (mapData->map[j])
 	{
 		i = 0;

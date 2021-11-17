@@ -18,18 +18,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb9ce689-f374-43cd-be8a-cb61f21829cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw_map_and_player.c" beforeDir="false" afterPath="$PROJECT_DIR$/draw_map_and_player.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/so_long.c" beforeDir="false" afterPath="$PROJECT_DIR$/so_long.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/so_long.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textures/coin.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textures/floor.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/textures/floor.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textures/new_floor.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textures/new_wall.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textures/player.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/textures/player.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textures/player_new.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textures/wall.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/textures/wall.xpm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +59,11 @@
         </entry>
       </map>
     </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
   </component>
   <component name="ProjectId" id="1zVFzrFNAFgKRYCoTFjxh8aREVm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -91,7 +87,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.42Header" />
   </component>
-  <component name="RunManager" selected="Makefile Application.all">
+  <component name="RunManager" selected="Makefile Application.fclean">
     <configuration name="all" type="CLionNativeAppRunConfigurationType" PROGRAM_PARAMS="$PROJECT_DIR$/maps/map_2.ber" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="so_long" TARGET_NAME="all" CONFIG_NAME="all" version="1" RUN_PATH="$PROJECT_DIR$/so_long">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
@@ -112,9 +108,9 @@
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -166,6 +162,11 @@
       <workItem from="1635113956546" duration="1280000" />
       <workItem from="1635116720425" duration="143000" />
       <workItem from="1635116949863" duration="50000" />
+      <workItem from="1635510049487" duration="29000" />
+      <workItem from="1635510093103" duration="2000" />
+      <workItem from="1635517189477" duration="75000" />
+      <workItem from="1637179354712" duration="3683000" />
+      <workItem from="1637186557519" duration="22000" />
     </task>
     <servers />
   </component>

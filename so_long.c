@@ -6,7 +6,7 @@
 /*   By: caniseed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 20:32:46 by caniseed          #+#    #+#             */
-/*   Updated: 2021/10/24 20:22:31 by caniseed         ###   ########.fr       */
+/*   Updated: 2021/11/18 00:08:13 by caniseed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,14 @@ int	render_next_frame(t_main *mapData)
 {
 	drawMap(mapData);
 	drawPlayer(mapData);
+	mlx_string_put(mapData->mlx, mapData->mlx_win, 32, 32, 0x00FF0000, ft_itoa(mapData->moves));
 	return (0);
+}
+
+int	ft_exit(t_main *mapData)
+{
+	structFree(mapData);
+	exit (SUCCESS);
 }
 
 int	main(int argc, char **argv)
@@ -73,10 +80,13 @@ int	main(int argc, char **argv)
 	fillMapData(mapData, argv[1]);
 	getMap(mapData, argv[1]);
 	checkMap(mapData);
-	mapData->mlx_win = mlx_new_window(mapData->mlx, \
-		mapData->size_x * 32, mapData->size_y * 32, "so_long");
+	//mapData->mlx_win = mlx_new_window(mapData->mlx, \
+		//mapData->size_x * 32, mapData->size_y * 32, "so_long");
+	mapData->mlx_win = mlx_new_window(mapData->mlx, mapData->size_x * 32, (mapData->size_y + 1) * 32, "so_long"); //для putstring mlx score
+	//mlx_string_put(mapData->mlx, mapData->mlx_win, 0, 32, 0x00FF0000, ft_itoa(mapData->moves));
 	mlx_key_hook(mapData->mlx_win, key_hook, mapData);
 	mlx_loop_hook(mapData->mlx, render_next_frame, mapData);
+	mlx_hook(mapData->mlx_win, 17, 5, ft_exit, mapData);
 	mlx_loop(mapData->mlx);
 	return (SUCCESS);
 }
