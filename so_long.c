@@ -57,6 +57,12 @@ int	key_hook(int keycode, t_main *mapData)
 	return (0);
 }
 
+int ft_exit(t_main *mapData)
+{
+    structFree(mapData);
+    exit (SUCCESS);
+}
+
 int	render_next_frame(t_main *mapData)
 {
 	drawMap(mapData);
@@ -77,6 +83,7 @@ int	main(int argc, char **argv)
 		mapData->size_x * 32, mapData->size_y * 32, "so_long");
 	mlx_key_hook(mapData->mlx_win, key_hook, mapData);
 	mlx_loop_hook(mapData->mlx, render_next_frame, mapData);
+    mlx_hook(mapData->mlx_win, 17, 5, ft_exit, mapData);
 	mlx_loop(mapData->mlx);
 	return (SUCCESS);
 }

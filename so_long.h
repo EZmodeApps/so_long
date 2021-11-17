@@ -95,5 +95,6 @@ void	fillMapData(t_main *mapData, char *map);
 void	getMap(t_main *mapData, char *map);
 void	checkMap2(t_main *mapData);
 void	checkMap(t_main *mapData);
+int     ft_exit(t_main *mapData);
 
 #endif
